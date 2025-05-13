@@ -1,0 +1,565 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+  rel="stylesheet" />
+</head>
+<body>
+    <div class="wrap">
+        <header class="py-5 md:py-8 shadow-lg sticky top-0 bg-white z-10">
+            <div class="container">
+              <div class="flex items-center justify-between">
+                <h1 class="mr-5 flex-shrink-0">
+                  <!-- flex-shrink-0: làm các vật k bị co lại -->
+                  <a href="#" class="max-w-[100px] md:max-w-[130px] block"><img src="../images/logo.webp"
+                      alt="Darion logo" /></a>
+                </h1>
+      
+                <div class="max-w-[500px] w-full hidden lg:flex relative mr-10">
+                  <div class="absolute left-3 top-1/2 -translate-y-1/2">
+                    <img src="../images/ico_search.png" alt="seacher icon" class="size-5" />
+                  </div>
+                  <input type="text"
+                    class="w-full pl-10 pr-4 py-2 border focus:outline-none focus:border-transparent focus:ring-blue-500 focus:ring-2 rounded-full"
+                    placeholder="Search..." />
+                </div>
+      
+                <nav class="ml-auto mr-28 hidden lg:block">
+                  <ul class="flex items-center gap-10">
+                    <li
+                      class="relative after:absolute after:w-full after:scale-x-0 hover:after:scale-100 after:duration-300 after:bg-primarry after:left-0 after:-bottom-0 after:h-[2px] hover:after:w-full after:transition-all">
+                      <a href="index.html" class="inline-block p-[10px]"> Home</a>
+                    </li>
+                    <li
+                      class="relative after:absolute after:w-full after:scale-x-0 hover:after:scale-100 after:duration-300 after:bg-primarry after:left-0 after:-bottom-0 after:h-[2px] hover:after:w-full after:transition-all">
+                      <a href="" class="inline-block p-[10px]">Shop</a>
+                    </li>
+                    <li
+                      class="relative after:absolute after:w-full after:scale-x-0 hover:after:scale-100 after:duration-300 after:bg-primarry after:left-0 after:-bottom-0 after:h-[2px] hover:after:w-full after:transition-all">
+                      <a href="" class="inline-block p-[10px]">Product</a>
+                    </li>
+                    <li
+                      class="relative after:absolute after:w-full after:scale-x-0 hover:after:scale-100 after:duration-300 after:bg-primarry after:left-0 after:-bottom-0 after:h-[2px] hover:after:w-full after:transition-all">
+                      <a href="" class="inline-block p-[10px]">Blog</a>
+                    </li>
+                    <li
+                      class="relative after:absolute after:w-full after:scale-x-0 hover:after:scale-100 after:duration-300 after:bg-primarry after:left-0 after:-bottom-0 after:h-[2px] hover:after:w-full after:transition-all">
+                      <a href="" class="inline-block p-[10px]">Fetured</a>
+                    </li>
+                  </ul>
+                </nav>
+      
+                <div class="flex items-center gap-6 flex-shrink-0">
+                  <a href="login.html" target="_blank">
+                    <img src="../images/ico_user.png" class="img size-5 items-center" alt="icon ico_user" />
+                  </a>
+                  <a href="#" class="relative">
+                    <span
+                      class="absolute -right-[10px] -top-[8px] text-[12px] bg-primarry rounded-full grid place-items-center text-white size-[18px]">8</span>
+                    <img src="../images/ico_heart.png" class="img size-5 items-center" alt="iocn heart" />
+                  </a>
+                  <a href="#" class="relative">
+                    <span
+                      class="absolute -right-[10px] -top-[8px] text-[12px] bg-primarry rounded-full grid place-items-center text-white size-[18px]">3</span>
+                    <img src="../images/ico_bag.png" class="img size-5 items-center" alt="icon bag" />
+                  </a>
+                </div>
+              </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="relative">
+                <div>
+                    <img class="img" src="../images/img_product_list_banner.webp" alt="">
+                </div>
+
+                <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
+                    <h2 class="text-4xl font-semibold">Products</h2>
+                    <ul class="flex items-center gap-3 justify-center mt-2">
+                        <li><a href="index.html">Home / </a></li>
+                        <li><a href="index.html">Products</a></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="py-12">
+              <div class="container">
+                <div class="lg:grid grid-cols-5">
+                  <div class="col-span-1 p-0 lg:p-4">
+                    <div>
+                      <h2 class="text-lg font-semibold">Category</h2>
+                      <ul class="mt-4 space-y-3">
+                        <li><a class="font-medium text-primarry text-sm hover:text-primarry transition-all" href="">Bathroom (6)</a></li>
+                        <li><a class="font-medium text-gray text-sm hover:text-primarry transition-all" href="">Chair (7)</a></li>
+                        <li><a class="font-medium text-gray text-sm hover:text-primarry transition-all" href="">Decor (17)</a></li>
+                        <li><a class="font-medium text-gray text-sm hover:text-primarry transition-all" href="">Lamp (3)</a></li>
+                        <li><a class="font-medium text-gray text-sm hover:text-primarry transition-all" href="">Table (9)</a></li>
+                      </ul>
+                    </div>
+                    <div class="mt-5">
+                      <h2 class="text-lg font-semibold">Availability</h2>
+                      <ul class="mt-4 space-y-3">
+                        <li><a class="font-medium text-primarry text-sm hover:text-primarry transition-all" href="">In stock (16)</a></li>
+                        <li><a class="font-medium text-gray text-sm hover:text-primarry transition-all" href="">Out of stock (1)</a></li>
+                      </ul>
+                    </div>
+                  </div>
+  
+                  <div class="col-span-4 mt-6 lg:mt-0">
+                    <div class="py-2 px-3 border rounded-full w-max cursor-pointer">
+                      <select name="" id="" class="w-full text-sm">
+                        <option value="1">Price, low to hight</option>
+                        <option value="2">Price, hight to low</option>
+                        <option value="3">Date, old to new</option>
+                        <option value="4">Date, new to old</option>
+                        <option value="5">Best selling</option>
+                      </select>
+                    </div>
+  
+                    <ul class="mt-9 lg:grid lg:grid-cols-3 gap-5 space-y-3 lg:space-y-0">
+                      <li class="group">
+                        <div class="rounded-xl overflow-hidden relative">
+                          <span class="absolute top-3 left-3 py-1 px-2 bg-primarry rounded-xl text-white text-xs">Out of
+                            stock</span>
+                          <img class="img" src="../images/img_product.webp" alt="Product 01 img">
+                          <ul class="space-y-3 absolute transition-all bottom-12 left-4">
+                            <li
+                              class="translate-y-4 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-200 ">
+                              <button class="p-3 shadow-lg  rounded-full bg-white inline-block hover:bg-slate-200" type="button"><img
+                                  class="size-4 img" src="../images/ico_heart.png" alt=""></button></li>
+                            <li
+                              class="translate-y-4 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-200 delay-100">
+                              <button class="p-3 shadow-lg  rounded-full bg-white inline-block hover:bg-slate-200" type="button"><img
+                                  class="size-4 img" src="../images/ico_reload.png" alt=""></button></li>
+                            <li
+                              class="translate-y-4 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-200 delay-200">
+                              <button class="p-3 shadow-lg  rounded-full bg-white inline-block hover:bg-slate-200" type="button"><img
+                                  class="size-4 img" src="../images/ico_search.png" alt=""></button></li>
+                          </ul>
+                        </div>
+          
+                        <div class="mt-5 text-center">
+                          <div class="flex items-center justify-center">
+                            <span><img class="size-[13px]" src="../images/ico_star_active.png" alt="icon star"></span>
+                            <span><img class="size-[13px]" src="../images/ico_star_gray.png" alt="icon star"></span>
+                            <span><img class="size-[13px]" src="../images/ico_star_gray.png" alt="icon star"></span>
+                            <span><img class="size-[13px]" src="../images/ico_star_gray.png" alt="icon star"></span>
+                            <span><img class="size-[13px]" src="../images/ico_star_gray.png" alt="icon star"></span>
+                          </div>
+                          <h3 class="text-[15px] mt-2">Egg Dining Table</h3>
+          
+                          <div class="mt-2 relative h-5 overflow-hidden">
+                            <div
+                              class="flex flex-col items-center absolute left-1/2 -bottom-5 group-hover:bottom-0 -translate-x-1/2 transition-all duration-300">
+                              <strong>$70.00</strong>
+                              <a href="#"
+                                class="uppercase text-[12px] tracking-widest relative after:absolute after:w-0 hover:after:w-full after:bottom-0 after:left-0 after:h-[1px] after:bg-primarry after:transition-all after:duration-300">Add
+                                to cart</a>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+          
+                      <li class="group">
+                        <div class="rounded-xl overflow-hidden relative">
+                          <img class="img" src="../images/img_product2.webp" alt="Product 01 img">
+                          <ul class="space-y-3 absolute transition-all bottom-12 left-4">
+                            <li
+                              class="translate-y-4 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-200 ">
+                              <button class="p-3 shadow-lg  rounded-full bg-white inline-block hover:bg-slate-200" type="button"><img
+                                  class="size-4 img" src="../images/ico_heart.png" alt=""></button></li>
+                            <li
+                              class="translate-y-4 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-200 delay-100">
+                              <button class="p-3 shadow-lg  rounded-full bg-white inline-block hover:bg-slate-200" type="button"><img
+                                  class="size-4 img" src="../images/ico_reload.png" alt=""></button></li>
+                            <li
+                              class="translate-y-4 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-200 delay-200">
+                              <button class="p-3 shadow-lg  rounded-full bg-white inline-block hover:bg-slate-200" type="button"><img
+                                  class="size-4 img" src="../images/ico_search.png" alt=""></button></li>
+                          </ul>
+                        </div>
+          
+                        <div class="mt-5 text-center">
+                          <div class="flex items-center justify-center">
+                            <span><img class="size-[13px]" src="../images/ico_star_active.png" alt="icon star"></span>
+                            <span><img class="size-[13px]" src="../images/ico_star_gray.png" alt="icon star"></span>
+                            <span><img class="size-[13px]" src="../images/ico_star_gray.png" alt="icon star"></span>
+                            <span><img class="size-[13px]" src="../images/ico_star_gray.png" alt="icon star"></span>
+                            <span><img class="size-[13px]" src="../images/ico_star_gray.png" alt="icon star"></span>
+                          </div>
+                          <h3 class="text-[15px] mt-2">Century Starburst Clock</h3>
+                          <div class="mt-2 relative h-5 overflow-hidden">
+                            <div
+                              class="flex flex-col items-center absolute left-1/2 -bottom-5 group-hover:bottom-0 -translate-x-1/2 transition-all duration-300">
+                              <strong>$70.00</strong>
+                              <a href="#"
+                                class="uppercase text-[12px] tracking-widest relative after:absolute after:w-0 hover:after:w-full after:bottom-0 after:left-0 after:h-[1px] after:bg-primarry after:transition-all after:duration-300">Add
+                                to cart</a>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+          
+                      <li class="group">
+                        <div class="rounded-xl overflow-hidden relative">
+                          <img class="img" src="../images/img_product3.webp" alt="Product 01 img">
+                          <ul class="space-y-3 absolute transition-all bottom-12 left-4">
+                            <li
+                              class="translate-y-4 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-200 ">
+                              <button class="p-3 shadow-lg  rounded-full bg-white inline-block hover:bg-slate-200" type="button"><img
+                                  class="size-4 img" src="../images/ico_heart.png" alt=""></button></li>
+                            <li
+                              class="translate-y-4 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-200 delay-100">
+                              <button class="p-3 shadow-lg  rounded-full bg-white inline-block hover:bg-slate-200" type="button"><img
+                                  class="size-4 img" src="../images/ico_reload.png" alt=""></button></li>
+                            <li
+                              class="translate-y-4 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-200 delay-200">
+                              <button class="p-3 shadow-lg  rounded-full bg-white inline-block hover:bg-slate-200" type="button"><img
+                                  class="size-4 img" src="../images/ico_search.png" alt=""></button></li>
+                          </ul>
+                        </div>
+          
+                        <div class="mt-5 text-center">
+                          <div class="flex items-center justify-center">
+                            <span><img class="size-[13px]" src="../images/ico_star_active.png" alt="icon star"></span>
+                            <span><img class="size-[13px]" src="../images/ico_star_gray.png" alt="icon star"></span>
+                            <span><img class="size-[13px]" src="../images/ico_star_gray.png" alt="icon star"></span>
+                            <span><img class="size-[13px]" src="../images/ico_star_gray.png" alt="icon star"></span>
+                            <span><img class="size-[13px]" src="../images/ico_star_gray.png" alt="icon star"></span>
+                          </div>
+                          <h3 class="text-[15px] mt-2">Bouquet Flower Vase</h3>
+                          <div class="mt-2 relative h-5 overflow-hidden">
+                            <div
+                              class="flex flex-col items-center absolute left-1/2 -bottom-5 group-hover:bottom-0 -translate-x-1/2 transition-all duration-300">
+                              <div class="flex items-center justify-center text-center">
+                                <strong class="">$59.00</strong> -
+                                <strong class="">$60.00</strong>
+                              </div>
+                              <a href="#"
+                                class="uppercase text-[12px] tracking-widest relative after:absolute after:w-0 hover:after:w-full after:bottom-0 after:left-0 after:h-[1px] after:bg-primarry after:transition-all after:duration-300">Add
+                                to cart</a>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+          
+                      <li class="group">
+                        <div class="rounded-xl overflow-hidden relative">
+                          <span class="absolute top-3 left-3 py-1 px-2 bg-red-600 rounded-xl text-white text-xs">-30%</span>
+                          <img class="img" src="../images/img_product4.webp" alt="Product 01 img">
+                          <ul class="space-y-3 absolute transition-all bottom-12 left-4">
+                            <li
+                              class="translate-y-4 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-200 ">
+                              <button class="p-3 shadow-lg  rounded-full bg-white inline-block hover:bg-slate-200" type="button"><img
+                                  class="size-4 img" src="../images/ico_heart.png" alt=""></button></li>
+                            <li
+                              class="translate-y-4 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-200 delay-100">
+                              <button class="p-3 shadow-lg  rounded-full bg-white inline-block hover:bg-slate-200" type="button"><img
+                                  class="size-4 img" src="../images/ico_reload.png" alt=""></button></li>
+                            <li
+                              class="translate-y-4 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-200 delay-200">
+                              <button class="p-3 shadow-lg  rounded-full bg-white inline-block hover:bg-slate-200" type="button"><img
+                                  class="size-4 img" src="../images/ico_search.png" alt=""></button></li>
+                          </ul>
+                        </div>
+          
+                        <div class="mt-5 text-center">
+                          <div class="flex items-center justify-center gap-1">
+                            <span><img class="size-[13px]" src="../images/ico_star_active.png" alt="icon star"></span>
+                            <span><img class="size-[13px]" src="../images/ico_star_gray.png" alt="icon star"></span>
+                            <span><img class="size-[13px]" src="../images/ico_star_gray.png" alt="icon star"></span>
+                            <span><img class="size-[13px]" src="../images/ico_star_gray.png" alt="icon star"></span>
+                            <span><img class="size-[13px]" src="../images/ico_star_gray.png" alt="icon star"></span>
+                          </div>
+                          <h3 class="text-[15px] mt-2">Caravaggio Read Wall Light</h3>
+                          <div class="mt-2 relative h-5 overflow-hidden">
+                            <div
+                              class="flex flex-col items-center absolute left-1/2 -bottom-5 group-hover:bottom-0 -translate-x-1/2 transition-all duration-300">
+                              <div class="flex items-center justify-center text-center">
+                                <strong class="text-gray line-through">$59.00</strong>-
+                                <strong class="text-red-600">$60.00</strong>
+                               </div>
+                              <a href="#"
+                                class="uppercase text-[12px] tracking-widest relative after:absolute after:w-0 hover:after:w-full after:bottom-0 after:left-0 after:h-[1px] after:bg-primarry after:transition-all after:duration-300">Add
+                                to cart</a>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li class="group">
+                        <div class="rounded-xl overflow-hidden relative">
+                          <span class="absolute top-3 left-3 py-1 px-2 bg-primarry rounded-xl text-white text-xs">Out of
+                            stock</span>
+                          <img class="img" src="../images/img_product.webp" alt="Product 01 img">
+                          <ul class="space-y-3 absolute transition-all bottom-12 left-4">
+                            <li
+                              class="translate-y-4 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-200 ">
+                              <button class="p-3 shadow-lg  rounded-full bg-white inline-block hover:bg-slate-200" type="button"><img
+                                  class="size-4 img" src="../images/ico_heart.png" alt=""></button></li>
+                            <li
+                              class="translate-y-4 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-200 delay-100">
+                              <button class="p-3 shadow-lg  rounded-full bg-white inline-block hover:bg-slate-200" type="button"><img
+                                  class="size-4 img" src="../images/ico_reload.png" alt=""></button></li>
+                            <li
+                              class="translate-y-4 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-200 delay-200">
+                              <button class="p-3 shadow-lg  rounded-full bg-white inline-block hover:bg-slate-200" type="button"><img
+                                  class="size-4 img" src="../images/ico_search.png" alt=""></button></li>
+                          </ul>
+                        </div>
+          
+                        <div class="mt-5 text-center">
+                          <div class="flex items-center justify-center">
+                            <span><img class="size-[13px]" src="../images/ico_star_active.png" alt="icon star"></span>
+                            <span><img class="size-[13px]" src="../images/ico_star_gray.png" alt="icon star"></span>
+                            <span><img class="size-[13px]" src="../images/ico_star_gray.png" alt="icon star"></span>
+                            <span><img class="size-[13px]" src="../images/ico_star_gray.png" alt="icon star"></span>
+                            <span><img class="size-[13px]" src="../images/ico_star_gray.png" alt="icon star"></span>
+                          </div>
+                          <h3 class="text-[15px] mt-2">Egg Dining Table</h3>
+          
+                          <div class="mt-2 relative h-5 overflow-hidden">
+                            <div
+                              class="flex flex-col items-center absolute left-1/2 -bottom-5 group-hover:bottom-0 -translate-x-1/2 transition-all duration-300">
+                              <strong>$70.00</strong>
+                              <a href="#"
+                                class="uppercase text-[12px] tracking-widest relative after:absolute after:w-0 hover:after:w-full after:bottom-0 after:left-0 after:h-[1px] after:bg-primarry after:transition-all after:duration-300">Add
+                                to cart</a>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+          
+                      <li class="group">
+                        <div class="rounded-xl overflow-hidden relative">
+                          <img class="img" src="../images/img_product2.webp" alt="Product 01 img">
+                          <ul class="space-y-3 absolute transition-all bottom-12 left-4">
+                            <li
+                              class="translate-y-4 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-200 ">
+                              <button class="p-3 shadow-lg  rounded-full bg-white inline-block hover:bg-slate-200" type="button"><img
+                                  class="size-4 img" src="../images/ico_heart.png" alt=""></button></li>
+                            <li
+                              class="translate-y-4 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-200 delay-100">
+                              <button class="p-3 shadow-lg  rounded-full bg-white inline-block hover:bg-slate-200" type="button"><img
+                                  class="size-4 img" src="../images/ico_reload.png" alt=""></button></li>
+                            <li
+                              class="translate-y-4 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-200 delay-200">
+                              <button class="p-3 shadow-lg  rounded-full bg-white inline-block hover:bg-slate-200" type="button"><img
+                                  class="size-4 img" src="../images/ico_search.png" alt=""></button></li>
+                          </ul>
+                        </div>
+          
+                        <div class="mt-5 text-center">
+                          <div class="flex items-center justify-center">
+                            <span><img class="size-[13px]" src="../images/ico_star_active.png" alt="icon star"></span>
+                            <span><img class="size-[13px]" src="../images/ico_star_gray.png" alt="icon star"></span>
+                            <span><img class="size-[13px]" src="../images/ico_star_gray.png" alt="icon star"></span>
+                            <span><img class="size-[13px]" src="../images/ico_star_gray.png" alt="icon star"></span>
+                            <span><img class="size-[13px]" src="../images/ico_star_gray.png" alt="icon star"></span>
+                          </div>
+                          <h3 class="text-[15px] mt-2">Century Starburst Clock</h3>
+                          <div class="mt-2 relative h-5 overflow-hidden">
+                            <div
+                              class="flex flex-col items-center absolute left-1/2 -bottom-5 group-hover:bottom-0 -translate-x-1/2 transition-all duration-300">
+                              <strong>$70.00</strong>
+                              <a href="#"
+                                class="uppercase text-[12px] tracking-widest relative after:absolute after:w-0 hover:after:w-full after:bottom-0 after:left-0 after:h-[1px] after:bg-primarry after:transition-all after:duration-300">Add
+                                to cart</a>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li class="group">
+                        <div class="rounded-xl overflow-hidden relative">
+                          <img class="img" src="../images/img_product3.webp" alt="Product 01 img">
+                          <ul class="space-y-3 absolute transition-all bottom-12 left-4">
+                            <li
+                              class="translate-y-4 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-200 ">
+                              <button class="p-3 shadow-lg  rounded-full bg-white inline-block hover:bg-slate-200" type="button"><img
+                                  class="size-4 img" src="../images/ico_heart.png" alt=""></button></li>
+                            <li
+                              class="translate-y-4 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-200 delay-100">
+                              <button class="p-3 shadow-lg  rounded-full bg-white inline-block hover:bg-slate-200" type="button"><img
+                                  class="size-4 img" src="../images/ico_reload.png" alt=""></button></li>
+                            <li
+                              class="translate-y-4 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-200 delay-200">
+                              <button class="p-3 shadow-lg  rounded-full bg-white inline-block hover:bg-slate-200" type="button"><img
+                                  class="size-4 img" src="../images/ico_search.png" alt=""></button></li>
+                          </ul>
+                        </div>
+          
+                        <div class="mt-5 text-center">
+                          <div class="flex items-center justify-center">
+                            <span><img class="size-[13px]" src="../images/ico_star_active.png" alt="icon star"></span>
+                            <span><img class="size-[13px]" src="../images/ico_star_gray.png" alt="icon star"></span>
+                            <span><img class="size-[13px]" src="../images/ico_star_gray.png" alt="icon star"></span>
+                            <span><img class="size-[13px]" src="../images/ico_star_gray.png" alt="icon star"></span>
+                            <span><img class="size-[13px]" src="../images/ico_star_gray.png" alt="icon star"></span>
+                          </div>
+                          <h3 class="text-[15px] mt-2">Bouquet Flower Vase</h3>
+                          <div class="mt-2 relative h-5 overflow-hidden">
+                            <div
+                              class="flex flex-col items-center absolute left-1/2 -bottom-5 group-hover:bottom-0 -translate-x-1/2 transition-all duration-300">
+                              <div class="flex items-center justify-center text-center">
+                                <strong class="">$59.00</strong> -
+                                <strong class="">$60.00</strong>
+                              </div>
+                              <a href="#"
+                                class="uppercase text-[12px] tracking-widest relative after:absolute after:w-0 hover:after:w-full after:bottom-0 after:left-0 after:h-[1px] after:bg-primarry after:transition-all after:duration-300">Add
+                                to cart</a>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+          
+                      <li class="group">
+                        <div class="rounded-xl overflow-hidden relative">
+                          <span class="absolute top-3 left-3 py-1 px-2 bg-red-600 rounded-xl text-white text-xs">-30%</span>
+                          <img class="img" src="../images/img_product4.webp" alt="Product 01 img">
+                          <ul class="space-y-3 absolute transition-all bottom-12 left-4">
+                            <li
+                              class="translate-y-4 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-200 ">
+                              <button class="p-3 shadow-lg  rounded-full bg-white inline-block hover:bg-slate-200" type="button"><img
+                                  class="size-4 img" src="../images/ico_heart.png" alt=""></button></li>
+                            <li
+                              class="translate-y-4 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-200 delay-100">
+                              <button class="p-3 shadow-lg  rounded-full bg-white inline-block hover:bg-slate-200" type="button"><img
+                                  class="size-4 img" src="../images/ico_reload.png" alt=""></button></li>
+                            <li
+                              class="translate-y-4 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-200 delay-200">
+                              <button class="p-3 shadow-lg  rounded-full bg-white inline-block hover:bg-slate-200" type="button"><img
+                                  class="size-4 img" src="../images/ico_search.png" alt=""></button></li>
+                          </ul>
+                        </div>
+          
+                        <div class="mt-5 text-center">
+                          <div class="flex items-center justify-center gap-1">
+                            <span><img class="size-[13px]" src="../images/ico_star_active.png" alt="icon star"></span>
+                            <span><img class="size-[13px]" src="../images/ico_star_gray.png" alt="icon star"></span>
+                            <span><img class="size-[13px]" src="../images/ico_star_gray.png" alt="icon star"></span>
+                            <span><img class="size-[13px]" src="../images/ico_star_gray.png" alt="icon star"></span>
+                            <span><img class="size-[13px]" src="../images/ico_star_gray.png" alt="icon star"></span>
+                          </div>
+                          <h3 class="text-[15px] mt-2">Caravaggio Read Wall Light</h3>
+                          <div class="mt-2 relative h-5 overflow-hidden">
+                            <div
+                              class="flex flex-col items-center absolute left-1/2 -bottom-5 group-hover:bottom-0 -translate-x-1/2 transition-all duration-300">
+                              <div class="flex items-center justify-center text-center">
+                                <strong class="text-gray line-through">$59.00</strong>-
+                                <strong class="text-red-600">$60.00</strong>
+                               </div>
+                              <a href="#"
+                                class="uppercase text-[12px] tracking-widest relative after:absolute after:w-0 hover:after:w-full after:bottom-0 after:left-0 after:h-[1px] after:bg-primarry after:transition-all after:duration-300">Add
+                                to cart</a>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li class="group">
+                        <div class="rounded-xl overflow-hidden relative">
+                          <span class="absolute top-3 left-3 py-1 px-2 bg-primarry rounded-xl text-white text-xs">Out of
+                            stock</span>
+                          <img class="img" src="../images/img_product.webp" alt="Product 01 img">
+                          <ul class="space-y-3 absolute transition-all bottom-12 left-4">
+                            <li
+                              class="translate-y-4 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-200 ">
+                              <button class="p-3 shadow-lg  rounded-full bg-white inline-block hover:bg-slate-200" type="button"><img
+                                  class="size-4 img" src="../images/ico_heart.png" alt=""></button></li>
+                            <li
+                              class="translate-y-4 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-200 delay-100">
+                              <button class="p-3 shadow-lg  rounded-full bg-white inline-block hover:bg-slate-200" type="button"><img
+                                  class="size-4 img" src="../images/ico_reload.png" alt=""></button></li>
+                            <li
+                              class="translate-y-4 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-200 delay-200">
+                              <button class="p-3 shadow-lg  rounded-full bg-white inline-block hover:bg-slate-200" type="button"><img
+                                  class="size-4 img" src="../images/ico_search.png" alt=""></button></li>
+                          </ul>
+                        </div>
+          
+                        <div class="mt-5 text-center">
+                          <div class="flex items-center justify-center">
+                            <span><img class="size-[13px]" src="../images/ico_star_active.png" alt="icon star"></span>
+                            <span><img class="size-[13px]" src="../images/ico_star_gray.png" alt="icon star"></span>
+                            <span><img class="size-[13px]" src="../images/ico_star_gray.png" alt="icon star"></span>
+                            <span><img class="size-[13px]" src="../images/ico_star_gray.png" alt="icon star"></span>
+                            <span><img class="size-[13px]" src="../images/ico_star_gray.png" alt="icon star"></span>
+                          </div>
+                          <h3 class="text-[15px] mt-2">Egg Dining Table</h3>
+          
+                          <div class="mt-2 relative h-5 overflow-hidden">
+                            <div
+                              class="flex flex-col items-center absolute left-1/2 -bottom-5 group-hover:bottom-0 -translate-x-1/2 transition-all duration-300">
+                              <strong>$70.00</strong>
+                              <a href="#"
+                                class="uppercase text-[12px] tracking-widest relative after:absolute after:w-0 hover:after:w-full after:bottom-0 after:left-0 after:h-[1px] after:bg-primarry after:transition-all after:duration-300">Add
+                                to cart</a>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+
+                    <div class="mt-10">
+                      <ul class="flex items-center justify-center gap-2">
+                        <li><button class="size-10 grid place-items-center border border-gray rounded-full"><img class="size-4" src="../images/ico_chevron_left.png" alt=""></button></li>
+                        <li><a class="grid place-items-center size-10 border border-gray rounded-full bg-primarry text-white" href="">1</a></li>
+                        <li><a class="grid place-items-center size-10 border border-gray rounded-full hover:bg-primarry hover:text-white transition-all" href="">2</a></li>
+                        <li><a class="grid place-items-center size-10 border border-gray rounded-full hover:bg-primarry hover:text-white transition-all" href="">3</a></li>
+                        <li><a class="grid place-items-center size-10 border border-gray rounded-full hover:bg-primarry hover:text-white transition-all" href="">4</a></li>
+                        <li><button class="size-10 grid place-items-center border border-gray rounded-full"><img class="size-4" src="../images/ico_chevron_right.png" alt=""></button></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+        </main>
+
+        <footer class="py-12">
+          <div class="container">
+           <div class="grid grid-cols-1 md:grid-cols-4 gap-8 lg:gap-24">
+            <div>
+              <h3 class="font-bold text-lg mb-4">About Us</h3>
+              <ul class="space-y-2">
+                <li class="hover:underline"><a href="">Our Shops</a></li>
+                <li class="hover:underline"><a href="">Contact</a></li>
+                <li class="hover:underline"><a href="">Artists</a></li>
+                <li class="hover:underline"><a href="">Local Giving</a></li>
+                <li class="hover:underline"><a href="">Press</a></li>
+              </ul>
+            </div>
+    
+            <div class="md:col-span-2 md:flex md:flex-col md:justify-center">
+              <h3 class="font-semibold text-xl mb-4 lg:text-center">Sign Up For Our Newsletter To Receive Notifications And Other Promotions</h3>
+              <div class="flex mt-4 w-full">
+                <input class="w-full px-4 py-4 rounded-l-full border border-r-0 border-gray focus:outline-none focus:border-primarry" type="text" placeholder="Email address...">
+                <button type="button" class="bg-primarry text-white px-6 py-2 rounded-r-full">Subscribe</button>
+              </div>
+            </div>
+    
+            <div>
+              <h3 class="font-bold text-lg mb-4">Customer Services</h3>
+              <ul class="space-y-2">
+                <li class="hover:underline"><a href="">FAQs</a></li>
+                <li class="hover:underline"><a href="">Store Locator</a></li>
+                <li class="hover:underline"><a href="">Returns</a></li>
+                <li class="hover:underline"><a href="">Shipping Information</a></li>
+                <li class="hover:underline"><a href="">Wholesale</a></li>
+              </ul>
+            </div>
+           </div>
+    
+           <div class="mt-12">
+            <p class="text-sm mb-4 md:mb-0 text-center">Copyright © 2024. All Right Reserved</p>
+           </div>
+          </div>
+        </footer>
+    </div>
+</body>
+</html>

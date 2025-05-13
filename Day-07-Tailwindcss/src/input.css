@@ -1,0 +1,31 @@
+/* - tầng cơ bản
+   - 
+*/
+@tailwind base;
+
+/* - tầng tạo ra những style chung với nhau
+   - tạo ra những UI
+*/
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply font-jakarta text-primarry leading-5 font-normal
+    }
+}
+
+@layer components {
+    .container {
+        /* width: 100%;
+        max-width: 1280px;  
+        padding: 0 30px;
+        margin: 0 auto; */
+
+        @apply px-5 mx-auto w-full max-w-1480
+    }
+
+    .img {
+        @apply max-w-full w-full h-full block object-cover 
+    }
+}

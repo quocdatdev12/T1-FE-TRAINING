@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 3</title>
+    <style>
+        #img_main {
+            width: 400px;
+        }
+        
+        .list_img {
+            display: flex;
+            gap: 5px;
+        }
+
+        .list_img img {
+            width: 100px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="images/img_1.jpg" id="img_main" alt="">
+    </div>
+    <div class="list_img">
+        <img src="images/img_1.jpg" id="img1" onclick="handleChangeImg('img1')" alt="">
+        <img src="images/img_2.jpg" id="img2" onclick="handleChangeImg('img2')" alt="">
+        <img src="images/img_3.jpg" id="img3" onclick="handleChangeImg('img3')" alt="">
+        <img src="images/img_4.jpg" id="img4" onclick="handleChangeImg('img4')" alt="">
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

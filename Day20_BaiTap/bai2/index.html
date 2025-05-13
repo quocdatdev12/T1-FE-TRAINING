@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài Tập</title>
+    <style>
+      #list_category button {
+        padding: 10px 15px;
+        margin: 5px;
+        border: none;
+        background-color: #eee;
+        cursor: pointer;
+      }
+
+      #list_category button.active {
+        background-color: blue;
+        color: #eee;
+        font-weight: 600;
+      }
+
+      .box_category {
+        display: flex;
+        width: 1024px;
+        justify-content: center;
+        margin: auto;
+        gap: 20px;
+        padding: 20px 0;
+        flex-wrap: wrap;
+      }
+
+      .item_product {
+        border: 1px solid #555;
+        border-radius: 20px;
+        padding: 10px;
+      }
+
+      .box_category img {
+        width: 100%;
+        object-fit: cover;
+      }
+
+      .box_img{
+        width: 100%;
+
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1>Chọn danh mục</h1>
+    <div id="list_category">
+      <!-- hiển thị thông tin -->
+    </div>
+    <h1 id="title"></h1>
+    <div class="box_category"></div>
+    <script src="main.js"></script>
+  </body>
+</html>

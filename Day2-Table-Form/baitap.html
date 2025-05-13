@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập day02</title>
+</head>
+
+<style>
+    table,
+    th,
+    td {
+      border-bottom: 1px solid;
+      border-collapse: collapse;
+      padding: 10px;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    th, td {
+        text-align: left;
+    }
+
+    th{
+        background-color: #f1f1f1ff;
+    }
+  </style>
+<body>
+    <header>
+        <h1>Đăng kí tham gia</h1>
+    </header>
+
+    <main>
+        <section>
+            <form>
+
+                <div>
+                    <label for="Username">Họ Tên:</label>
+                    <input type="text" name="Username" id="Username" placeholder="nguyen van a">
+
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="dat123@gmail.com">
+
+                    <label for="phone">Số điện thoại:</label>
+                    <input type="tel" name="phone" id="phone" placeholder="nhap so dien thoai">
+
+                    <br>
+                    <br>
+                </div>
+
+                <div>
+                    <label for="">Giới tính:</label>
+                    <input type="radio" name="gender" value="nam"> Nam
+                    <input type="radio" name="gender" value="nữ"> Nữ
+
+                    <br>
+                    <br>
+                </div>
+
+                <div>
+                    <label for="">Quốc Gia:</label>
+                    <select name="" id="">
+                        <option value="">Chọn Quốc Gia</option>
+                        <option value="1">Việt Nam</option>
+                        <option value="2">Thái Lan</option>
+                        <option value="3">Mỹ</option>
+                    </select>
+
+                    <br>
+                    <br>
+                </div>
+
+                <div>
+                    <input type="checkbox"> Đăng kí nhận bản tin
+
+                    <br>
+                    <br>
+                </div>
+
+                <div>
+                    <button type="submit">Gửi</button>
+                </div>
+            </form>
+        </section>
+
+        <section>
+            <h2>Danh sách đăng kí</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Họ Tên</th>
+                        <th>Email</th>
+                        <th>Số điện thoại</th>
+                        <th>Giới Tính</th>
+                        <th>Quốc Gia</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Nguyễn Văn A</td>
+                        <td>a@example.com</td>
+                        <td>0123456789</td>
+                        <td>Nam</td>
+                        <td>Việt Nam</td>
+                    </tr>
+
+                    <tr>
+                        <td>Trần Thị B</td>
+                        <td>b@example.com</td>
+                        <td>0987654321</td>
+                        <td>Nữ</td>
+                        <td>Mỹ</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        
+    </footer>
+</body>
+</html>

@@ -1,0 +1,326 @@
+* { 
+    /* selector tất cả element */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Work Sans", serif;
+    font-weight: 400;
+    color: white;
+    line-height: 1.2;
+}
+
+h2 {
+    text-align: center;
+    font-size: 40px;
+    margin: 20px;
+
+}
+
+/* margin: không làm thay đổi kích thước content */
+.parent {
+    /* display: flex; */
+}
+
+.parent .box {
+    width: 200px; 
+    height: 200px;
+    background-color:  blueviolet;
+    color: white;
+}
+
+.box-1 {
+    /* margin-top: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    margin-left: 30px; */
+
+    /* CSS SHORTHAND */
+
+    /* margin: 30px; */
+
+    /* margin: 30px 20px; */
+
+    /* margin: 40px 20px 30px 20px; */
+
+    /* margin: 40px 20px 30px; */
+
+    /* margin: 35px 25px 35px 20px; */
+}
+
+/* padding */
+
+.box-1 {
+    /* padding: 20px; */
+    /* padding-left: 20px;
+    padding-right: 20px; */
+
+}
+
+/* Margin collapse: lấy phần lớn hơn xét cách nhau theo chiều dọc thì k tính gộp vào trên dưới sễ  lấy phần lớn hơn collapse */
+
+.box-1 {
+    /* margin-bottom: 30px; */
+}
+
+.box-2 {
+    margin-top: 60px;
+}
+
+/* Border */
+
+.parent .box-2 {
+    width: 200px;
+    border: 5px solid black;
+    padding: 20px;
+
+    /* box-sizing: border-box; được tính bằng border và padding và content 
+       mặc định là centen- box
+    */
+
+    /* box-sizing: border-box; */
+}
+
+/* Css Fonts */
+
+.paragraph {
+    /* color: red; */
+
+    /* thiết lập cỡ chữ */
+    /* font-size: 30px; */
+
+    /* độ đậm nhạt của chữ */
+    /* font-weight:600; */
+    font-style: normal;
+}
+
+.paragraph:nth-child(2) {
+    background-color: aquamarine;
+    text-align: center;
+}
+
+
+/* css Position */
+
+/* relative */
+
+main {
+    /* margin-top: 60px; */
+}
+
+.parent-2 .inner {
+    /* position: absolute; */
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background-color: blueviolet;
+}
+
+.parent-2 .box {
+    width: 300px;
+    height: 300px;
+    /* position: relative;  */
+    top: 100px;
+    left: 100px;
+
+    background-color: blue;
+    color: white;
+
+    /* Potision */
+
+    /* vị trí tương đối  */
+    /* left: 10px;
+    right: 10px;
+    top: 10px;
+    bottom: 10px; */
+}
+
+/* absolute  */
+
+.parent-2 .box span {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: black;
+    border-radius: 20px;
+    font-size: 13px;
+    padding: 5px 10px;
+
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* width: 100%; */
+    z-index: 999;
+    padding: 20px;
+    background-color: brown;
+    color: white;
+}
+
+ul.menu {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+ul.menu li a {
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+/* Css Layout */
+
+/* Flex container */
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    /* row-gap: 30px;
+    column-gap: 30px; */
+    width: 800px;
+    gap: 30px;
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* justify-content: space-between; */
+    /* justify-content: space-around ; */
+    /* justify-content: space-evenly; */
+
+
+    align-items: center;
+
+    /* align-items: stretch; */
+    /* align-items: self-end; */
+
+    /* align-items: self-start; */
+
+}
+
+
+/* Flex item */
+.box .item {
+    width: 200px;
+    /* height: 100px; */
+    background-color: brown;
+    color: white;
+    /* flex: 1; */
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 100%;
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.creator-list {
+    display: flex;
+    flex-wrap: wrap;
+    /* margin-left: -30px; */
+    gap: 30px;
+}
+
+
+.creator-item {
+    position: relative;
+    background-color: #3B3B3B;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+
+    /* margin-left: 30px; */
+    /* width: calc((100% - 120px) / 4); */
+    
+    /* flex: 1; */
+
+    width: calc((100% - 90px) / 4);
+}
+
+.creator-item:nth-child(n + 5) {
+    margin-top: 30px;
+}
+
+.creator-rank {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    top: 18px;
+    left: 20px;
+    background-color: #2B2B2B;
+    border-radius: 50%;
+    color: #858584;
+}
+
+.creator-info {
+    margin-top: 20px;
+}
+
+.creator-name {
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 600;
+}
+
+.creator-sale {
+    display: flex;
+    margin-top: 5px;
+    gap: 10px;
+}
+
+.creator-sale .label {
+    color: #858584;
+}
+
+.creator-sale .coind {
+    color: #FFFFFF;
+    font-family: "Space Mono", serif;
+}
+
+section.box-100 {
+    margin-top: 100px;
+}
+.wrapper {
+    width: 100%;
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.categories-menu {
+    display: flex;
+    gap: 30px;
+}
+
+.categories-list {
+    background-color: #3B3B3B;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+
+}
+
+.categories-info .categories-name {
+    margin-top: 20px;
+    /* text-align: left; */
+}
+
+

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài 5</title>
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: #eef2f3;
+        margin: 0;
+        padding: 20px;
+      }
+      .container {
+        width: 1200px;
+        background: white;
+        padding: 20px;
+        margin: auto;
+      }
+
+      h2 {
+        text-align: center;
+        color: #333;
+        margin-bottom: 20px;
+      }
+
+      label {
+        font-weight: 600;
+        display: block;
+        margin: 5px 0;
+      }
+
+      input,
+      select,
+      textarea {
+        width: calc(100% - 20px);
+        padding: 10px;
+        margin: 5px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+        box-sizing: border-box;
+      }
+
+      .gender-container {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      button {
+        background: #007bff;
+        color: white;
+        padding: 12px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 100%;
+        font-size: 16px;
+        margin-top: 10px;
+        transition: background 0.3s;
+      }
+
+      .btn-actions {
+        display: flex;
+        width: 230px;
+        gap: 10px;
+      }
+
+      .btn-actions button:nth-child(2) {
+        background: red;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        background: white;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+
+      td,
+      th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 12px;
+      }
+
+      th {
+        background-color: #007bff;
+        color: white;
+        font-weight: bold;
+      }
+
+      th:nth-child(1) {
+        display: flex;
+        align-items: center;
+      }
+
+      tr:nth-child(even) {
+        background-color: #f8f9fa;
+      }
+
+      #previewAvatar {
+        display: block;
+        margin-top: 10px;
+        max-width: 100px;
+        border-radius: 5px;
+      }
+
+      #message-noData {
+        text-align: center;
+        color: red;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Form User</h2>
+      <div>
+        <label for="valId">Id:</label>
+        <input type="text" id="valId" disabled />
+      </div>
+
+      <div>
+        <label for="valUserName">UserName:</label>
+        <input type="text" id="valUserName" placeholder="Nhập tên" />
+        <span id="message_error"></span>
+      </div>
+      <div>
+        <label for="valAvatar">Avatar:</label>
+        <input type="file" id="valAvatar" />
+        <img src="" id="previewAvatar" />
+      </div>
+      <div>
+        <label for="valSalary">Salaty:</label>
+        <input type="number" id="valSalary" placeholder="Nhập số" />
+        <span id="message_error1"></span>
+      </div>
+      <div>
+        <label for="valDes">Des:</label>
+        <textarea id="valDes"> </textarea>
+      </div>
+      <div>
+        <label for="">Gender:</label>
+        <div>
+          <input type="radio" name="gender" value="Male" style="width: 100px" />
+          Male
+        </div>
+        <div>
+          <input
+            type="radio"
+            name="gender"
+            value="Female"
+            style="width: 100px"
+          />
+          Female
+        </div>
+      </div>
+      <div style="display: flex">
+        <label for="">Married:</label>
+        <input type="checkbox" id="valMarried" style="width: 100px" />
+      </div>
+      <div>
+        <label for="">Ducation:</label>
+        <select id="valDucation">
+          <option value="" disabled selected>Choose select ducation</option>
+          <option value="1">1 Năm</option>
+          <option value="2">2 Năm</option>
+          <option value="3">3 Năm</option>
+          <option value="4">4 Năm</option>
+        </select>
+      </div>
+      <div class="btn-actions">
+        <button id="btnSubmit" onclick="handleSubmit()">Thêm</button>
+        <button
+          id="btnDelete"
+          style="display: none"
+          onclick="handleDeleteFromCheckBox()"
+        >
+          Xóa
+        </button>
+      </div>
+    </div>
+
+    <div class="container">
+      <table>
+        <thead>
+          <th>
+            All
+            <input type="checkbox" id="checkAll" />
+          </th>
+          <th>ID</th>
+          <th>User Name</th>
+          <th>Avatar</th>
+          <th>Salary</th>
+          <th>Des</th>
+          <th>Gender</th>
+          <th>Married</th>
+          <th>Ducation</th>
+          <th>Action</th>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <p id="message-noData">No Data</p>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

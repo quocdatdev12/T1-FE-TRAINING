@@ -1,0 +1,892 @@
+/* Xét mọi thứ về ban đầu */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* biến dùng chung cho tiện lợi */
+:root {
+    /* Color */
+    --gray-color: #2b2b2b;
+    --primary-color: #a259ff;
+    --white--color: #fff;
+    --light-gray-color: #3b3b3b;
+
+    /* Fonts */
+    --primary--font: "Work Sans", serif;
+    --secondary-font: "Space Mono", serif;
+}
+
+body {
+    background-color: var(--gray-color);
+    font-family: var(--primary--font);
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--white--color);
+}
+
+ol,
+ul {
+    list-style-type: none;
+}
+
+a {
+    display: inline-block;
+    color: var(--white--color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    color: var(--white--color);
+}
+
+button,
+input {
+    /* inherit: dùng để cho element đc kế thừa */
+    font: inherit;
+}
+
+input:focus {
+    outline: none;
+}
+
+img {
+    display: block;
+
+    /* Giúp thẻ luôn bằng 100% phần tử cha */
+    max-width: 100%;
+
+    /* giúp khi thay đổi tỉ lệ khung k bị vỡ  */
+    object-fit: cover;
+}
+
+select,
+textarea,
+input {
+    color: var(--gray-color);
+}
+
+.container {
+    width: 100%;
+    max-width: 1110px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+.section {
+    position: relative;
+    padding: 80px 0;
+}
+
+/* Button gobal */
+
+.btn {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-radius: 20px;
+    font-weight: 600;
+    border: 2px solid transparent;
+    padding: 17px 48px;
+    line-height: 22px;
+}
+
+.btn.btn-primary {
+    background-color: var(--primary-color);
+}
+
+.btn.btn-outline {
+    border-color: var(--primary-color);
+}
+
+.btn.btn-white {
+    color: var(--gray-color);
+    background-color: var(--white--color);
+}
+
+.btn-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.btn.btn-small {
+    padding: 17px 28px;
+}
+
+.section-heading .section-subtitle {
+    margin-top: 10px;
+}
+
+.section-title,
+.section-subtitle {
+    text-transform: capitalize;
+}
+
+.section-title {
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.section-subtitle {
+    font-size: 22px;
+    line-height: 1.6;
+}
+
+/* Header */
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 34px 50px;
+    gap: 30px;
+}
+
+.logo a {
+    display: block;
+}
+
+.logo img {
+    height: 32px;
+}
+
+.menu {
+    display: flex;
+    gap: 10px;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu-link {
+    position: relative;
+    padding: 12px 20px;
+}
+
+.menu-link::after {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--white--color);
+    content: "";
+    transform: translateX(-50%);
+    /* css esasing để bt thêm nhiều hiệu ứng */
+    transition: width 0.2s ease-out;
+}
+
+.menu-link:hover::after {
+    width: calc(100% - 40px);
+}
+
+.menu-link:hover {
+    text-decoration: none;
+}
+
+/* Main */
+
+.section-hero .section-heading .section-subtitle {
+    margin-top: 20px;
+}
+
+.section-hero .section-title {
+    font-size: 67px;
+    line-height: 1.1;
+}
+
+.hero-inner {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.hero-content,
+.hero-media {
+    flex: 1;
+}
+
+.hero-media {
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.section-hero  .hero-btn {
+    margin-top: 40px;
+}
+
+.statis-list {
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.statis-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.statis-total {
+    font-size: 28px;
+    font-family: var(--secondary-font);
+    font-weight: 700;
+}
+
+.hero-media-info {
+    padding: 22px 20px;
+    background-color: var(--light-gray-color);
+}
+
+.nft-artist-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.nft-artist-title {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.nft-artist-avatar {
+    overflow: hidden;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+}
+
+/* section-collection */
+
+.content-collection {
+    margin-top: 60px;
+    display: flex;
+    gap: 30px;  
+}
+
+.collection-total {
+    flex: 1;
+}
+
+.collection-span {
+    display: flex;
+    margin-top: 15px;
+    gap: 15px;
+}
+
+ul.content-collection .collection-total .collection-img img:hover {
+    overflow: hidden;
+    transform: scale(1.1,1.1);
+    transition: all 0.2s;
+    transition-duration: 300ms;
+}
+
+.collection-img > img,
+.collection-img-list > img
+ {
+    width: 100%;
+}
+
+.collection-img,
+.collection-img-list
+ {
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.collection-img-list {
+    flex: 1;
+}
+
+.collection-artist {
+    margin-top: 15px;
+}
+
+.collection-img-list-btn {
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-color);
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+    font-family: var(--secondary-font);
+}
+
+/* section-dators */
+
+.section-heading:has( .btn ) {
+    display: flex;
+    justify-content: space-between;
+    /* flex-end cho icon xuống dưới */
+    align-items: flex-end;
+    gap: 30px;
+}
+
+.section-heading-text {
+    flex: 1;
+}
+
+
+/*
+c2:
+.section-heading .btn {
+    flex-shrink: 0;
+} */
+
+
+
+.creator-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 60px;
+    /* display: flex;
+    flex-wrap: wrap; */
+    gap: 30px;
+}
+
+.creator-item {
+    position: relative;
+    background-color: var(--light-gray-color);
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+    /* width: calc((100% - 90px) / 4); */
+}
+
+.creator-image {
+    display: flex;
+    justify-content: center;
+}
+
+.creator-rank {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    top: 18px;
+    left: 20px;
+    background-color: #2b2b2b;
+    border-radius: 50%;
+    color: #858584;
+}
+
+.creator-name {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.creator-sale {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    gap: 10px;
+}
+
+.creator-sale .label {
+    color: #858584;
+}
+
+.creator-sale .coind {
+    font-family: var(--secondary-font);
+}
+
+.label,
+.coind {
+    white-space: nowrap;
+}
+
+.browse-list {
+    margin-top: 60px;
+}
+
+.browse-info {
+    padding: 20px 30px;
+    background-color: var(--light-gray-color);
+}
+
+.browse-list {
+    margin-top: 60px;
+    display: grid;
+    /* Xác định số lượng cột và kích thước của từng cột trong một Grid Container.
+    - repeat(4, ...) có nghĩa là lặp lại mẫu bên trong 4 lần (tức là tạo ra 4 cột).
+    - 1fr (1 fraction) có nghĩa là mỗi cột chiếm một phần bằng nhau trong tổng không gian có sẵn.
+    - Grid có 4 cột bằng nhau.
+    - Nếu tổng chiều rộng container là 1000px, thì mỗi cột sẽ có độ rộng xấp xỉ 250px (trừ đi khoảng cách gap nếu có).
+    */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.browse-crad {
+    overflow: hidden;
+
+    background-color: var(--light-gray-color);
+    /* width: (calc(100% - 90px) / 4); */
+    border-radius: 20px;
+}
+
+.browse-images > img {
+    width: 100%;
+}
+
+.browse-crad .nft-artist {
+    padding: 20px 30px;
+}
+
+/* section-discover */
+
+.discover-haeder {
+    display: flex;
+    justify-content: space-between;
+}
+
+.discover-btn {
+    padding-top: 31px;
+}
+
+.discover-list {
+    margin-top: 60px;
+    display: flex;
+    gap: 30px;
+}
+
+.discover-item {
+    overflow: hidden;
+    border-radius: 20px;
+    background-color: var(--light-gray-color);
+    flex: 1;
+}
+
+.discover-wrap {
+    padding: 20px 30px;
+}
+
+.discover-imges > img {
+    width: 100%;
+}
+
+.discover-content {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.discover-info .nft-artist-name {
+    font-family: var(--secondary-font);
+}
+
+.discover-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.discover-total {
+    font-size: 12px;
+    color: #858584;
+}
+
+.discover-price {
+    margin-top: 8px;
+    font-family: var(--secondary-font);
+}
+
+/* section-highlight */
+
+.section-highlight {
+    position: relative;
+    height: 640px;
+    background-image: url(../images/nam_highlinght.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center ;
+}
+
+.section-highlight::before {
+    position: absolute;
+    content: '';
+    inset: 0;
+    background: linear-gradient(180deg, rgba(162, 89, 255, 0) 0%, #A259FF 100%);
+}
+
+
+.section-highlight .container {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------- */
+
+.works-list {
+    margin-top: 48px;
+    display: flex;
+    flex: 1;
+    gap: 30px;
+}
+
+.works-img img {
+    display: inline;
+}
+
+.works-card {
+    overflow: hidden;
+    padding: 10px 30px 30px 30px;
+    flex: 1;
+    background-color: var(--light-gray-color);
+    border-radius: 20px;
+    gap: 20px;
+    text-align: center;
+}
+
+.works-tilte {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.weekly-wrap {
+    background-color: var(--light-gray-color);
+    padding: 60px;
+    border-radius: 20px;
+    display: flex;
+    gap: 80px;
+}
+
+.weekly-wrap .section-heading {
+    margin-bottom: 40px;
+}
+
+.weekly-img > img {
+    width: 100%;
+}
+
+.weekly-text,
+.weekly-img {
+    flex: 1;
+}
+
+.subscription-form {
+    /* background-color: var(--white--color); */
+    /* display: flex; */
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.subscription-form input {
+    width: 100%;
+    background-color: var(--white--color);
+    padding: 17px 20px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.subscription-form ::placeholder{
+    font-size: 14px;
+}
+.div-relative {
+    position: relative;
+}
+.subscription-form .btn{
+    position: absolute;
+    top: 0;
+    right: 2px;
+}
+
+/* footer */
+
+.footer {
+    background-color: var(--light-gray-color);
+}
+
+.footer-total {
+    display: flex;
+    /* justify-content: space-between; */
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+.footer-1 {
+    width: 327px;
+}
+
+.footer-2 {
+    width: 303px;
+}
+
+.footer-3 {
+    width: 420px;
+}
+
+.footer-p {
+    column-span: 2;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.footer-content-p {
+    padding-bottom: 15px;
+}
+
+.footer-img {
+    display: flex;
+    gap: 10px;
+}
+
+.fooetr-h2{
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+
+.footer-list li {
+    margin-bottom: 20px;
+}
+
+.footer-3 .footer-h2 {
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+
+.footer-3-p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.footer-subscribe input {
+    /* flex: 1; */
+    width: 100%;
+    padding: 18px 20px;
+    border-radius: 20px;
+}
+
+.footer-relative {
+    position: relative;
+}
+
+.footer-subscribe .btn {
+    position: absolute;
+    top: 1px;
+    right: 0px;
+}
+
+.footer-final {
+    border-top: 1px solid #858584;
+}
+
+.p-final{
+    margin-top: 20px;
+}
+
+/* cú pháp Responsive */
+
+@media screen and (max-width: 1024px) {
+
+    .header {
+        padding: 15px 50px;
+    }
+
+    .section {
+        padding: 40px 0;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .section-subtitle {
+        font-size: 16px;
+    }
+
+    .creator-list,
+    .browse-list,
+    .discover-list {
+        margin-top: 40px;
+    }
+
+    /* max-width: 1024px : áp dụng cho những màn hình từ 1042px trở xuống  */
+    .header-nav {
+        /* display: none; */
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 999;
+        height: 100vh;
+        background-color: var(--light-gray-color);
+        width: 300px;
+        padding: 30px;
+        transform: translateX(100%);
+        /* opacity: 0; */
+        transition: transform 0.3s ease-out;
+    }
+
+    .header-nav.is-open {
+        transform: translate(0);
+        /* opacity: 1; */
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .creator-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .creator-item {
+        display: flex;
+        align-items: center;
+        text-align: left;
+        gap: 20px;
+    }
+
+    .creator-image {
+        max-width: 60px;
+        flex-shrink: 0;
+    }
+
+    .creator-rank {
+        top: 13px;
+        left: 12px;
+    }
+
+    .collection-total:last-child {
+        display: none;
+    }
+
+    .discover-item:last-child {
+        display: none;
+    }
+
+    .weekly-wrap {
+        gap: 30px;
+    }
+
+    .subscription-form {
+        flex-direction: column;
+    }
+
+    .subscription-form input {
+        margin-bottom: 16px;
+    }
+
+    .subscription-form .btn {
+        justify-content: center;
+    }
+
+}
+
+@media screen and (min-width: 1025px) {
+
+    /* max-width: 1024px : áp dụng cho những màn hình từ 1042px trở xuống.
+
+    Media: bắt điểm dừng và css cho nó và được Responsive
+      */
+    .menu-btn {
+        display: none;
+    }
+
+    .creator-info {
+        margin-top: 20px;
+    }
+
+    /* chuyển đổi display:none sang display: block thì trantion k hoạt động  */
+
+    .header-right {
+        display: none;
+    }
+}
+
+/* Mobile */
+
+@media screen and (max-width: 768px) {
+    .creator-list {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+
+    .creator-name {
+        font-size: 20px;
+    }
+
+    .label,
+    .coind {
+       font-size: 14px;
+    }
+
+    .collection-total:nth-child(n+2) {
+        display: none;
+    }
+
+    .section-heading .btn {
+        justify-content: center;
+        position: absolute;
+        bottom: 40px;
+        width: calc(100% - 60px);
+    }
+
+    .section-creators {
+        padding-bottom: 140px;
+    }
+
+    .section-discover {
+        padding-bottom: 160px;
+    }
+
+
+
+   .discover-list {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .discover-item:last-child {
+        display: block;
+    }
+
+
+
+
+    .browse-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+}
+
+

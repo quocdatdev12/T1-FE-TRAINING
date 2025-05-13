@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0e0ff;
+}
+
+.container{
+    width: 450px;
+    background-color: #6699ff;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 0 auto;
+    color: white;
+}
+
+input, select {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;   
+    margin-bottom: 10px;
+}
+
+button {
+    border: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.btn-add { background-color: orange; color: white; }
+.btn-clear { background-color: teal; color: white; }
+
+.box_todo {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.box_todo_right {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.btn-status {
+    border: 1px solid white;
+    padding: 8px 30px;
+    border-radius: 8px;
+
+}
+
+.btn-Todo {
+    background-color: #d63384;
+}
+
+.btn-Done {
+    background-color: #3bd633;
+}
+
+.btn-Doing {
+    background-color: #3384d6;
+}
+
+.btn-Resolved  {
+    background-color: #d63338;
+}
+
+.btn-Reopen {
+    background-color: #b77c15;
+}
+
+.todo { background-color: #d63384; }
+.done { background-color: #f0ad4e; }

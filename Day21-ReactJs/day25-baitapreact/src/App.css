@@ -1,0 +1,113 @@
+@import "tailwindcss";
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #eef2f3;
+  margin: 0;
+  padding: 20px;
+}
+.container {
+  width: 1200px;
+  background: white;
+  padding: 20px;
+  margin: auto;
+}
+
+h2 {
+
+    font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: 600;
+  display: block;
+  margin: 5px 0;
+}
+
+input,
+select,
+textarea {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.gender-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+button {
+  background: #007bff;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+  margin-top: 10px;
+  transition: background 0.3s;
+}
+
+.btn-actions {
+  display: flex;
+  width: 230px;
+  gap: 10px;
+}
+
+.btn-actions button:nth-child(2) {
+  background: red;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 12px;
+}
+
+th {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+}
+
+th:nth-child(1) {
+  display: flex;
+  align-items: center;
+}
+
+tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+#previewAvatar {
+  display: block;
+  margin-top: 10px;
+  max-width: 100px;
+  border-radius: 5px;
+}
+
+#message-noData {
+  text-align: center;
+  color: red;
+  font-weight: bold;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 1</title>
+</head>
+<body>
+        <div><input type="text" id="fullname" placeholder="Nhập họ và tên"></div>
+        <div>
+            <select id="valCity">
+                <option value="Hà Nội">Hà Nội</option>
+                <option value="TP HCM">TP HCM</option>
+                <option value="Đà Nẵng">Đà Nẵng</option>
+            </select>
+        </div>
+        <div>
+            <input type="radio" id="male" value="Nam" name="gender">
+            <label for="male">Nam</label>
+            <input type="radio" id="female" value="Nữ" name="gender">
+            <label for="female">Nữ</label>
+        </div>
+
+        <button onclick="handleSubmit()">Hiện thị</button>
+        <div id="result">
+            <!-- kết quả -->
+        </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

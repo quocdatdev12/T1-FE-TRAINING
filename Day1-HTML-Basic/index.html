@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 01: HTML - Basic</title>
+</head>
+
+<body>
+     <!--SEMANTIC HTML: Ngữ nghĩa -->
+    <div class="wrapper">
+        <header>Header</header>
+        <!-- SEO -->
+        <main>
+
+             <!-- thẻ mở có <p> và thể đóng </p> -->    
+            <p>This is P tang</p>
+
+            <section class="images">
+                <h2>Close Tag</h2>
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmCy16nhIbV3pI1qLYHMJKwbH2458oiC9EmA&s" alt="This is tang" width=""> 
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Dolores soluta sint necessitatibus repudiandae itaque quaerat doloribus perspiciatis deleniti.</p>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Dolores soluta sint necessitatibus repudiandae itaque quaerat doloribus perspiciatis deleniti.</p>
+            </section>
+            
+            <section class="thẻ a">
+                <h2>HTML Attribute</h2>
+
+                <a href="https://www.google.com.vn/?hl=vi" target="_blank">Link google</a>
+            </section>
+
+
+            <section class="thẻ span">
+                <p>
+                    <span style="font-weight: 700;">Họ tên:</span> Nguyễn Văn A
+                    <br>
+                    <span style="font-style: italic;">Năm sinh: </span> 2003
+                </p>
+            </section>
+
+            <section>
+                <h2>Link & Button</h2>
+                <a href="https://google.com">google</a>
+                
+                <button type="button" onclick="alert('hello !')">Click me</button>
+
+                <a href="#">Top</a>
+            </section>
+
+            <section>
+                <h2>Absolute & relative Path</h2>
+
+                <p>Relative Path (đường dẫn tương đối)</p>
+                <img src="./images/" alt="">
+                <!-- ./ ở mục  hiện tại & ../ ra ngoài -->
+
+
+                <p>Relative Absolute (tuỵt đối) </p>
+                <img src="http://" alt="">
+
+            </section>
+
+            <section>
+                <h2>Form</h2>
+
+                <form action="">
+                    <label for="email">email</label>
+                    <input name="email" type="email" placeholder="sorpm@gmail.com" id="email">
+
+                    <label for="password">password</label>
+                    <input name="password" type="password" placeholder="" id="password">
+
+                    <button type="submit">Gửi</button>
+                </form>
+            </section>
+
+            <section>
+                <h2>Imges & Audio</h2>
+
+                <audio controls autoplay >
+                    <!-- autoplay: tự phát 
+                     muốn phát thêm: controls
+                     muted: tắt tiếng
+                     -->
+                    <source src="./audios/audio.mp3" type="audio/mpeg">
+                </audio>
+
+                <br>
+                <video controls muted autoplay>
+                    <!-- muốn chạy đc thêm muted 
+                         autoplay: tự phát + muted thêm
+                     
+                    -->
+                    <source src="./videos/video.mp4">
+                </video>
+
+            </section>
+
+            <section>
+                <h2>Ul & OL</h2>
+
+                <ul>
+                    <li>Coffe</li>
+                    <li>Tea</li>
+                    <li>Mik</li>
+                </ul>
+
+                <h2>Ul & OL</h2>
+                <ol>
+                    <li>Red</li>
+                    <li>Grenn</li>
+                    <li>Blue</li>
+                </ol>
+
+            </section>
+
+            <section>
+                <h2>Block & Inline Element</h2>
+
+                <div style="width: 500px;">
+                    <p>Block</p>
+                    <p style="background-color: green ; color: white;">This p tag</p>
+
+                    <p style="width: 200px; height: 100px; background-color: green ; color: white;">This p tag</p>
+                </div>
+
+                <p>Inline</p>
+                <span style="background-color: aqua;">This is Inline</span>
+
+                <span style="background-color: aqua; ">This is Inline</span>
+            </section>
+
+            <section>
+                <h1>This is heading tag 1</h1>
+                <h2>This is heading tag 1</h2>
+                <h3>This is heading tag 1</h3>
+                <h4>This is heading tag 1</h4>
+                <h5>This is heading tag 1</h5>
+                <h6>This is heading tag 1</h6>
+            </section>
+
+        </main>
+
+        <footer>Footer</footer>
+    </div>
+</body>
+
+</html>

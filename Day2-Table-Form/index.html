@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 02: Table & Form</title>
+  </head>
+
+  <style>
+    table,
+    th,
+    td {
+      border: 1px solid;
+      border-collapse: collapse;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+
+  <body>
+    <div class="wrapper">
+      <!-- <header>Header</header> -->
+      <main>
+        Main
+        <section>
+          <h2>Table</h2>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Adress</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody class="tbody">
+              <tr>
+                <td>Phan Minh Sơn</td>
+                <td>20</td>
+                <td>Hà nội</td>
+                <td>Active</td>
+              </tr>
+
+              <tr>
+                <td>Phan Minh Sơn</td>
+                <td>20</td>
+                <td>Hà nội</td>
+                <td>Active</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section>
+            <h2>Colspan</h2>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>1</th>
+                        <th>2</th>
+                        <th>3</th>
+                        <th>4</th>
+                    </2>
+                </thead>
+
+                <tbody>
+                    <!-- table row -->
+                    <tr>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                    </tr>
+
+                        <!-- table row -->
+                    <tr>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>12</td>
+                    </tr>
+
+                        <!-- table row -->
+
+                    <tr>
+                        <td colspan="2">13</td>
+                        <td>14</td>
+                        <td>15</td>
+                        <!-- <td>16</td> -->
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Bài tập</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="3">1</th>
+                        <th>2</th>
+                        <th>3</th>
+                        <th>4</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td colspan="3">7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="3">13</td>
+                        <td>14</td>
+                        <td>15</td>
+                        <td>16</td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="3">1</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="5">1</td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="4">1</td>
+                        <td></td>
+                        <td></td>
+                     
+                    </tr>
+
+                    <tr>
+                        <td colspan="5">1</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Rowspan</h2>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>1</th>
+                        <th>2</th>
+                        <th>3</th>
+                        <th>4</th>
+                    </2>
+                </thead>
+
+                <tbody>
+                    <!-- table row -->
+                    <tr>
+                        <td rowspan="2">5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                    </tr>
+
+                        <!-- table row -->
+                    <tr>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <!-- <td>12</td> -->
+                    </tr>
+
+                        <!-- table row -->
+
+                    <tr>
+                        <td rowspan="2">13</td>
+                        <td>14</td>
+                        <td>15</td>
+                        <td>16</td>
+                    </tr>
+
+                    
+                    <tr>
+                        <td>13</td>
+                        <td>14</td>
+                        <td>15</td>
+                        <!-- <td>16</td> -->
+                    </tr>
+
+                    
+                </tbody>
+            </table>
+
+
+        </section>
+
+        <section>
+            <h2>Bài tập rowspan</h2>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>1</th>
+                        <th>2</th>
+                        <th>3</th>
+                        <th>4</th>
+                    </2>
+                </thead>
+
+                <tbody>
+                    <!-- table row -->
+                    <tr>
+                        <td rowspan="2">5</td>
+                        <td>6</td>
+                        <td rowspan="3">7</td>
+                        <td>8</td>
+                    </tr>
+
+                        <!-- table row -->
+                    <tr>
+                        <td rowspan="2">9</td>
+                        <td>10</td>
+                        <!-- <td>11</td> -->
+                        <!-- <td>12</td> -->
+                    </tr>
+
+                        <!-- table row -->
+
+                    <tr>
+                        <td rowspan="2">13</td>
+                        <td>14</td>
+                        <!-- <td>15</td> -->
+                    </tr>
+
+                    <tr>
+                        <td>17</td>
+                        <td>18</td>
+                        <td>19</td>
+                        <!-- <td>16</td> -->
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+
+        <section>
+            <h2>Rowspan & Colspan</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th rowspan="2">Stt</th>
+                        <th rowspan="2">Tên sản phẩm</th>
+                        <th colspan="2">Thông tin</th>
+                        <th rowspan="2">Hãng</th>
+                        <th rowspan="2">Giá</th>
+                        <th rowspan="2">Trạng thái</th>
+                        <!-- <th></th> -->
+                    </tr>
+
+                    <tr>
+                        <th>Màu sắc</th>
+                        <th>Cân nặng</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Dell 6445</td>
+                        <td>Màu trắng</td>
+                        <td>1kg</td>
+                        <td>Dell</td>
+                        <td>5.000.000</td>
+                        <td>Hết hàng</td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>HP 450g3</td>
+                        <td>Màu đỏ</td>
+                        <td>1kg</td>
+                        <td>HP</td>
+                        <td>5.000.000</td>
+                        <td>Còn hàng</td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>lenovo</td>
+                        <td>Màu đen</td>
+                        <td>1kg</td>
+                        <td>Lenovo</td>
+                        <td>5.000.000</td>
+                        <td>Hết hàng</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        
+      <section>
+        <h2>Form</h2>
+
+        <form>
+            <div>
+                <label id="Username">User</label>
+                <input type="text" name="Username" id="Username" value="" >
+            </div>
+
+            <div>
+                <label id="password">Mật khẩu</label>
+                <input type="password" id="password" name="password">
+            </div>
+
+            <div>
+                <label>Email</label>
+                <input type="email" name="Bài">
+            </div>
+
+            <div>
+                <label id="number">Number</label>
+                <input type="number" name="phone" value="" min="1" max="10">
+            </div>
+
+            <div>
+                <label for="content">Nhập văn bản:</label>
+                <textarea name="comment" id="content"></textarea>
+            </div>
+
+            <div>
+                <input type="range">
+            </div>
+
+            <button>Gửi</button>
+        </form>
+      </section>
+      </main>
+      <!-- <footer>Footer</footer> -->
+
+    </div>
+
+  </body>
+</html>
