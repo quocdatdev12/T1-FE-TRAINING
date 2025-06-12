@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.list_menu {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.list_menu li {
+    cursor: pointer;
+    color: white;
+}
+
+.list_menu li a {
+    text-decoration: none;
+    color: white;
+}
+
+header {
+    background-color: darkorchid;
+    padding: 20px 30px;
+}
